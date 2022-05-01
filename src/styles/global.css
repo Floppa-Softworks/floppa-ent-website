@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('https://github.com/googlefonts/lexend/blob/main/fonts/lexend/ttf/Lexend-Medium.ttf?raw=true')
+    format('ttf');
+}
+
+body::-webkit-scrollbar {
+  width: 0.45em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #108adb;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}

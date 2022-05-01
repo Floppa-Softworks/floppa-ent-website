@@ -1,18 +1,18 @@
 import { ActionIcon, Group, useMantineColorScheme } from '@mantine/core';
 import { SunIcon, MoonIcon } from '@modulz/radix-icons';
 
-export function ColorSchemeToggle() {
+export function ColorSchemeToggle({ display }: { display?: string }) {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   return (
-    <Group position="center" mt="xl">
+    <Group position="center" sx={{ display }}>
       <ActionIcon
         onClick={() => toggleColorScheme()}
-        size="xl"
+        size="lg"
         sx={(theme) => ({
           backgroundColor:
             theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-          color: theme.colorScheme === 'dark' ? theme.colors.yellow[4] : theme.colors.blue[6],
+          color: theme.colorScheme === 'dark' ? theme.colors.blue[3] : theme.colors.blue[6],
         })}
       >
         {colorScheme === 'dark' ? (
